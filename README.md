@@ -66,7 +66,7 @@ Built using **D3.js** for full control and customization.
 
 ## 📷 Poster Preview
 
-![Poster](./VA_Team13_Poster-1.jpg) <!-- Update path if needed -->
+![Poster](./VA_Team13_Poster-1.pdf) <!-- Update path if needed -->
 
 ## 📝 Report
 
