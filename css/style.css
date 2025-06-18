@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+body {
+    font-family: "Oswald", sans-serif;
+    font-size: 13px;
+    padding: 30px;
+    background: #efeef4;
+}
+
+#title {
+    height: 5em;
+    background: #b1bbd9;
+    margin-bottom: 16px;
+    padding-top: 8px;
+    padding-left: 8px;
+}
+
+#filter-container {
+    padding: 8px;
+    background: #b1bbd9;
+    height: 10em;
+}
+
+#filter-panel {
+    padding: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.legend-color {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+
+#linechart {
+    background: white;
+    padding: 2em;
+    height: 32em;
+    width: 60em;
+}
+
+#textbox {
+    background: white;
+    padding: 2em;
+    height: 32em;
+    width: 60em;
+}
+
+
+#barchart {
+    background: white;
+    padding: 2em;
+    height: 32em;
+    margin-bottom: 16px;
+    width: 60em;
+}
+
+#choroplethchart {
+    background: white;
+    padding: 2em;
+    height: 32em;
+    width: 60em;
+    margin-bottom: 16px;
+}
+
+h1 {
+    margin-top: 0;
+    font-style: italic;
+}
+
+.axis text {
+    font-size: 13px;
+    fill: #6b6b6b;
+}
+
+.axis-title {
+    font-size: 13px;
+    fill: #888;
+}
+
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    top: 16px;
+}
+
+.flex-item {
+    flex: 1;
+    width: calc(33.33% - 20px);
+    margin: 10px;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+#toggle-panel, #legend-panel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.legend-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 20px;
+}
