@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final project</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div>
+        <div id="title">
+            <h1>Effect of unemployment on Metro vs non-Metro areas in the US</h1>
+        </div>
+        <div id="filter-container">
+            <h3>Filter Panel</h3>
+            <div id="filter-panel">
+                <button id="filter-button">Reset filters</button>
+                <div id="toggle-panel">
+                    <input type="checkbox" id="metro-toggle" name="metro-toggle">
+                    <label for="metro-toggle">Metro </label>
+                    <div id="toggle-panel">
+                        <input type="checkbox" id="non-metro-toggle" name="metro-toggle">
+                        <label for="metro-toggle">Non-Metro</label>
+                    </div>
+                </div>
+                <div id="legend-panel">
+                    <h3 style="margin-right: 10px;">Legend</h3>
+                    <div class="legend-item">
+                        <span class="legend-color" style="background-color: #e7585b;"></span>
+                        <span class="legend-label">Metro</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color" style="background-color: #f78e39;"></span>
+                        <span class="legend-label">Non-Metro</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color" style="background-color: #4e79a7;"></span>
+                        <span class="legend-label">Employed</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color" style="background-color: #f78e39;"></span>
+                        <span class="legend-label">Unemployed</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex-container">
+            <div class="flex-item">
+                <div id="barchart">
+                    <h3 style="display: inline;">Cost effect on metro vs non-metro cities</h3><h3 id="barchart-placeholder" style="display: inline;"></h3>
+                </div>
+                <div id="linechart">
+                    <h3 style="display: inline;">Employment and unemployment rate over time</h3><h3 id="linechart-placeholder" style="display: inline;"></h3>
+                </div>
+            </div>
+            <div class="flex-item">
+                <div id="choroplethchart">
+                    <h3>Taxes in metro vs non-metro cities</h3> 
+                    <svg width="1200" height="1000" id="mapSVG"></svg>
+                    <svg width="1200" height="1000" id="taxSVG"></svg>
+                </div>
+                <div id="textbox">
+                    <h3>Exploring Cost of Living and Unemployment in the US</h3>
+                    <p>
+                        <b><u>Problem Statement:</b></u> How the cost of living and unemployment rates change in
+                        different parts of the United States must be understood. This will help leaders, economists,
+                        businesses and ordinary people to make good choices.
+                    </p>
+                    <p>
+                        <b><u>Analytical tasks:</u></b>
+                    <ul>
+                        <li>Look at the correlation between the cost of living and unemployment rates in each US state.
+                        </li>
+                        <li>After taking into account unemployment rates, identify which areas have the highest and
+                            lowest cost of living.</li>
+                        <li>See how the cost of living and unemployment rates differ in different regions.</li>
+                        <li>Use past data to understand how the cost of living and unemployment have been changing over
+                            time</li>
+                    </ul>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+        <script src="js/d3.v7.min.js"></script>
+        <script src="js/barChart.js"></script>
+        <script src="js/lineChart.js"></script>
+        <script src="js/choroplethChart.js"></script>
+        <script src="js/main.js"></script>
+    </div>
+</body>
+
+</html>
